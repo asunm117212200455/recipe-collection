@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+  font-family: 'Rubik', sans-serif;
+}
+@media (max-width: 1100px){
+	.home-text h1 {
+		font-size: 3rem;
+	}
+}
+@media (max-width:991px){
+	header{
+		padding: 11px 4px;
+	}
+	#menu-icon{
+		display: initial;
+	}
+	header.active #menu-icon{
+		color: #fff;
+	}
+	header .navbar{
+		position: absolute;
+		top: -500px;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		background: var(--second-color);
+		box-shadow: 0 4px 4px rgb(14 55 54 / 15%);
+		transition: 0.2s ease;
+		text-align: right;
+	}
+	.navbar.active{
+		top: 100%;
+	}
+	.navbar a{
+		padding: 1.5rem;
+		display: block;
+		color: #fff;
+	}
+	.home-text h1{
+		font-size: 2.4rem;
+	}
+	.about h1{
+		font-size: 2rem;
+	}
+	.heading h2{
+		font-size: 1.6rem;
+	}
+	.contact-info h2{
+		font-size: 1.6rem;
+	}
+}
+@media (max-width: 360px){
+	.home-text span{
+		font-size: 0.8rem;
+	}
+	.home-text h1{
+		font-size: 2rem;
+	}
+	.home-text p{
+		font-size: 0.9rem;
+	}
+}
+
+#search-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--main-color)
+}
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background:var(--main-color);
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+    border: 1px solid var(--second-color);
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+}
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+}
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
